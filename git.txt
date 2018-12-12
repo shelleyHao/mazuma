@@ -1,0 +1,24 @@
+git init 			初始化仓库
+git add ./文件名 		提交到暂存区
+git commit -m"提交说明" 	将暂存区中的内容提交到仓库
+git log 			查看日志信息
+git log --pretty=oneline	查看日志信息每行一个版本
+git reset --hard HEAD	HEAD当前版本，HEAD~上一个版本，HEAD~ ~上上个，HEAD~N前几个版本
+git  branch 	 	查看分支
+git branch 名称  	创建分支
+git checkout 分支名称   切换到分支下
+git merge 分支名称  	使用指定分支与当前分支合并
+
+
+远程仓库
+确保简历链接
+
+git clone git@github.com shelleyHao/git仓库 或者HTTPS的链接
+操作
+git add .
+git commit -m ''
+git push origin master
+
+git fetch [alias] 告诉 Git 去获取它有你没有的数据
+git merge [alias]/[branch] 以将服务器上的任何更新（假设有人这时候推送到服务器了）合并到你的当前分支
+1.git pull  从远端仓库提取数据并尝试合并到当前分支  该命令就是在执行 git fetch 之后紧接着执行 git merge 远程分支到你所在的任意分支。
